@@ -1,0 +1,14 @@
+{
+  "name": "web_19",
+  "version": "1.0.0",
+  "description": "Timothy Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Timothy",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

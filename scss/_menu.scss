@@ -4,14 +4,22 @@
   z-index: 3;
   right: 35px;
   top: 35px;
+  width: 40px;
+  height: 40px;
+  background: $secondary-color;
+  border-radius: 50%;
   cursor: pointer;
   @include easeOut;
 
+  .btn-line-container {
+    margin: 11px 0 0 6px;
+  }
+
   .btn-line {
     width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #fff;
+    height: 4px;
+    margin: 0 0 3px 0;
+    background-color: #4a4a4a;
     @include easeOut;
   }
 
@@ -23,6 +31,9 @@
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
+        position: absolute;
+        top: 11px;
+        left: 6px;
       }
 
       // Line 2 - Hide
@@ -33,6 +44,9 @@
       // Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
+        position: absolute;
+        top: 27px;
+        left: 6px;
       }
     }
   }
@@ -57,9 +71,16 @@
     align-items: center;
     justify-content: center;
     float: left;
-    width: 50%;
     height: 100vh;
     overflow: hidden;
+  }
+
+  &-branding {
+    width: 75%;
+  }
+
+  &-nav {
+    width: 25%;
   }
 
   &-nav {
@@ -117,7 +138,7 @@
     text-transform: uppercase;
     padding: 0.75rem 0;
     font-weight: 100;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

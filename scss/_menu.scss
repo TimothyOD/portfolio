@@ -18,8 +18,9 @@
   .btn-line {
     width: 28px;
     height: 4px;
+    border-radius: 25%;
     margin: 0 0 3px 0;
-    background-color: #4a4a4a;
+    background-color: $primary-color;
     @include easeOut;
   }
 
@@ -69,7 +70,6 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     float: left;
     height: 100vh;
     overflow: hidden;
@@ -77,15 +77,15 @@
 
   &-branding {
     width: 75%;
+    justify-content: center;
   }
 
   &-nav {
     width: 25%;
-  }
-
-  &-nav {
-    margin: 0;
+    justify-content: top;
+    margin-top: 0;
     padding: 0;
+    padding-top: 15vh;
     background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);

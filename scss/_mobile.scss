@@ -46,13 +46,13 @@
   }
 
   .menu-nav {
-    height: 75vh;
+    height: 100vh;
     transform: translate3d(0, 100%, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 25vh;
+    height: 0vh;
     transform: translate3d(0, -100%, 0);
 
     .portrait {
@@ -66,11 +66,17 @@
   .about-info {
     grid-template-areas:
       'bioimage'
-      'bio'
+      'bio';
+
+    grid-template-columns: 1fr;
+  }
+
+  .cv-info {
+    grid-template-areas:
       'job1'
       'job2'
-      'job3';
-
+      'job3'
+      'job4';
     grid-template-columns: 1fr;
   }
 
@@ -89,6 +95,16 @@
   }
 
   .projects {
+    grid-template-columns: 1fr;
+  }
+  .cv-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3'
+      'job4';
     grid-template-columns: 1fr;
   }
   .logos {

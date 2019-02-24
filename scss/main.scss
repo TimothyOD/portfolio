@@ -20,7 +20,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 100;
   text-transform: uppercase;
 
   &.lg-heading {
@@ -34,6 +34,16 @@ h3 {
     background: rgba(lighten($primary-color, 2), 0);
     position: relative;
     left: 0.25rem;
+    top: -1rem;
+  }
+
+  &.sm-heading-2 {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    color: $secondary-color;
+    background: rgba(lighten($primary-color, 2), 0);
+    position: relative;
+    left: -0.5rem;
     top: -1rem;
   }
 
@@ -53,11 +63,33 @@ h3 {
     left: -1rem;
     top: -1.75rem;
   }
+  &.text-secondary {
+    color: $secondary-color;
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.07rem;
 }
 
 a {
-  color: #fff;
+  color: $secondary-color;
   text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    @include easeOut();
+  }
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
 }
 
 header {
@@ -97,6 +129,7 @@ main {
 
     a {
       padding: 0.4rem;
+      color: #fff;
 
       &:hover {
         color: $secondary-color;
@@ -113,43 +146,50 @@ main {
   }
 }
 
+// ABOUT
+
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-  grid-template-columns: repeat (3, fr);
+  grid-template-areas: 'bioimage bio bio bio';
+  grid-template-columns: repeat (4, fr);
 
   .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
   }
+}
 
-  .job-1 {
-    grid-area: job1;
-  }
+// CV
 
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
+.cv-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-gap: 5px;
 
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+.roles {
+  color: $secondary-color;
+}
+
+.edu {
+  margin-top: 4.5rem;
 }
 
 // Work/Projects
@@ -184,6 +224,7 @@ main {
 
 .btn-light {
   text-transform: uppercase;
+  color: #fff;
   &:hover {
     color: $secondary-color;
     @include easeOut;

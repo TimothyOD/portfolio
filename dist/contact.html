@@ -80,7 +80,12 @@
           </div>
           <div class="contact">
             <div class="alert">Your message has been sent</div>
-            <form id="contactForm" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              id="contactForm"
+              method="POST"
+              data-netlify="true"
+            >
               <p>
                 <label>Name</label>
                 <input type="text" name="name" id="name" required />
@@ -122,8 +127,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
     <script src="js/contact.js"></script>
   </body>
 </html>

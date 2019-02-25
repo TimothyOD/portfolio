@@ -1,27 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contactform.css" />
+    <title>CONTACT</title>
   </head>
-  <body>
-    <form name="contact" method="POST" netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name"/></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email"/></label>
-      </p>
-      <p></p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line-container">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">
+              Work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="cv.html" class="nav-link">
+              CV
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="contact.html" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact">
+      <h2 class="sm-heading-2">
+        Contact
+      </h2>
+
+      <div class="container">
+        <div class="wrapper animated bounceInLeft">
+          <div class="company-info">
+            <h1 class="lg-heading-contact">
+              <span class="text-tim-contact">Tim</span>
+              <span class="text-o-contact">•</span>
+              <span class="text-thy-contact">thy</span>
+            </h1>
+          </div>
+          <div class="contact">
+            <div class="alert">Your message has been sent</div>
+            <form
+              method="POST"
+              action="http://serverlessforms.com/api/form/13062540-2ab4-5621-b63f-4ce458cb84dc/form-response"
+            >
+              <p>
+                <label>name</label>
+                <input type="text" name="name" required />
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" required />
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="10" required></textarea>
+              </p>
+              <div data-netlify-recaptcha="true"></div>
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright <br />
+      &copy; 2019
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

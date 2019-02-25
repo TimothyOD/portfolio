@@ -127,8 +127,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
-  line-height: 1.25; }
+  font-family: 'Nunito', sans-serif; }
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
@@ -269,7 +268,15 @@ main {
     transform: translateY(50%); }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem;
+    background: #515151;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: #ffc000 5px solid; }
+  .about-info .bio p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.25rem; }
 
 .cv-info {
   display: grid;

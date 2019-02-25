@@ -62,13 +62,25 @@ ul {
 
 .company-info h3,
 .company-info ul {
-  text-align: left;
+  text-align: center;
   margin: 0 0 1rem 0;
 }
 
 .contact {
   background: gray;
   opacity: 0.9;
+}
+
+/* SENT */
+.alert {
+  background: #ffc000;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  font-size: 0.9rem;
+  display: none;
 }
 
 /* FORM STYLES */
@@ -125,7 +137,7 @@ ul {
 }
 
 /* LARGE SCREENS */
-@media (min-width: 700px) {
+@media (min-width: 870px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;

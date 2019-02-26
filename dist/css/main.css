@@ -296,7 +296,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
     border: 0; }
@@ -314,7 +314,7 @@ main {
   color: #fff; }
 
 .btn-light {
-  text-transform: uppercase;
+  font-size: 0.9rem;
   color: #fff; }
   .btn-light:hover {
     color: #ffc000;
@@ -372,8 +372,7 @@ main {
   transform: rotate(-45deg); }
 
 .ov-head {
-  position: relative;
-  top: 12px; }
+  margin-bottom: 20px; }
 
 .logos {
   display: grid;
@@ -385,11 +384,16 @@ main {
     min-width: 20%; }
 
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  margin-top: 60px;
-  width: 100%; }
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  overflow: scroll; }
+
+.project-image {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px; }
 
 #main-footer {
   text-align: center;
@@ -408,13 +412,13 @@ main {
 
 @media screen and (min-width: 1121px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(5, 1fr); }
   .logos {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 769px) and (max-width: 1120px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(4, 1fr); }
   .logos {
     grid-template-columns: repeat(3, 1fr); } }
 

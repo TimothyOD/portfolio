@@ -86,7 +86,7 @@
               action="http://serverlessforms.com/api/form/13062540-2ab4-5621-b63f-4ce458cb84dc/form-response"
             >
               <p>
-                <label>name</label>
+                <label>Name</label>
                 <input type="text" name="name" required />
               </p>
               <p>
@@ -97,7 +97,10 @@
                 <label>Message</label>
                 <textarea name="message" rows="10" required></textarea>
               </p>
-              <div data-netlify-recaptcha="true"></div>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6Le40pMUAAAAAN1OvVLujGZFog5UY-6o3X5AZqC7"
+              ></div>
               <p class="full">
                 <button type="submit">Submit</button>
               </p>
@@ -113,5 +116,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>

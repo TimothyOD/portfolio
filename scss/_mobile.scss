@@ -1,7 +1,7 @@
 // Widescreens
 @include mediaXl {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
   .logos {
     grid-template-columns: repeat(4, 1fr);
@@ -11,7 +11,7 @@
 // Desktop & Laptops
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .logos {
     grid-template-columns: repeat(3, 1fr);

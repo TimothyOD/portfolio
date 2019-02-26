@@ -295,8 +295,8 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(5, 1fr); }
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
     border: 0; }
@@ -338,7 +338,7 @@ main {
   transition: all 0.5s ease-out; }
   .project-overlay.showProject, .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree, .project-overlay.showProjectFour, .project-overlay.showProjectFive, .project-overlay.showProjectSix, .project-overlay.showProjectSeven, .project-overlay.showProjectEight, .project-overlay.showProjectNine {
     visibility: visible; }
-  .project-overlay.showProject, .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree, .project-overlay.showProjectFour, .project-overlay.showProjectFive, .project-overlay.showProjectSix, .project-overlay.showProjectSeven, .project-overlay.showProjectEight, .project-overlay.showProjectNine {
+  .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree, .project-overlay.showProjectFour, .project-overlay.showProjectFive, .project-overlay.showProjectSix, .project-overlay.showProjectSeven, .project-overlay.showProjectEight, .project-overlay.showProjectNine {
     transform: translate3d(0, 0, 0); }
 
 .project-1.showPojectOne {
@@ -395,7 +395,8 @@ main {
   max-width: 900px; }
 
 .img-heading {
-  color: #ffc000; }
+  color: #ffc000;
+  text-align: center; }
 
 #main-footer {
   text-align: center;
@@ -414,14 +415,10 @@ main {
 
 @media screen and (min-width: 1021px) {
   .projects {
-    grid-template-columns: repeat(6, 1fr); }
-  .logos {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 799px) and (max-width: 1020px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
-  .logos {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 699px) {
@@ -460,9 +457,9 @@ main {
     grid-template-areas: 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
-  .logos {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .img-heading {
+    font-size: 0.9rem; } }
 
 @media screen and (max-width: 400px) {
   main#home h1 {
@@ -473,4 +470,6 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
   .logos {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .img-heading {
+    font-size: 0.9rem; } }

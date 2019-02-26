@@ -38,10 +38,6 @@ function toggleMenu() {
 
 // Select DOM Items
 // Logos
-const projectOver = document.querySelector('.project-overlay.project-logos');
-const project = document.querySelector('.btn-logos');
-const projectButton = document.querySelector('.close-logos');
-
 const projectOverOne = document.querySelector('.project-overlay.project-1');
 const projectOne = document.querySelector('.btn-project-1');
 const projectButtonOne = document.querySelector('.close-project-1');
@@ -79,7 +75,6 @@ const projectNine = document.querySelector('.btn-project-9');
 const projectButtonNine = document.querySelector('.close-project-9');
 
 // Set Initial State Of Menu
-let showProject = false;
 let showProjectOne = false;
 let showProjectTwo = false;
 let showProjectThree = false;
@@ -91,8 +86,6 @@ let showProjectEight = false;
 let showProjectNine = false;
 
 // Toggle
-project.addEventListener('click', toggleProject);
-projectButton.addEventListener('click', toggleProject);
 
 projectOne.addEventListener('click', toggleProjectOne);
 projectButtonOne.addEventListener('click', toggleProjectOne);
@@ -121,18 +114,6 @@ projectButtonEight.addEventListener('click', toggleProjectEight);
 projectNine.addEventListener('click', toggleProjectNine);
 projectButtonNine.addEventListener('click', toggleProjectNine);
 
-// Logos
-function toggleProject() {
-  if (!showProject) {
-    projectOver.classList.add('showProject');
-    projectButton.classList.add('showProject');
-    showProject = true;
-  } else {
-    projectOver.classList.remove('showProject');
-    projectButton.classList.remove('showProject');
-    showProject = false;
-  }
-}
 // Project 1
 function toggleProjectOne() {
   if (!showProjectOne) {

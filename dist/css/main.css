@@ -296,7 +296,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(5, 1fr); }
   .projects img {
     width: 100%;
     border: 0; }
@@ -314,7 +314,7 @@ main {
   color: #fff; }
 
 .btn-light {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #fff; }
   .btn-light:hover {
     color: #ffc000;
@@ -336,9 +336,9 @@ main {
   transform: translate3d(0, 100%, 0);
   visibility: hidden;
   transition: all 0.5s ease-out; }
-  .project-overlay.showProject, .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree {
+  .project-overlay.showProject, .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree, .project-overlay.showProjectFour, .project-overlay.showProjectFive, .project-overlay.showProjectSix, .project-overlay.showProjectSeven, .project-overlay.showProjectEight, .project-overlay.showProjectNine {
     visibility: visible; }
-  .project-overlay.showProject, .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree {
+  .project-overlay.showProject, .project-overlay.showProjectOne, .project-overlay.showProjectTwo, .project-overlay.showProjectThree, .project-overlay.showProjectFour, .project-overlay.showProjectFive, .project-overlay.showProjectSix, .project-overlay.showProjectSeven, .project-overlay.showProjectEight, .project-overlay.showProjectNine {
     transform: translate3d(0, 0, 0); }
 
 .project-1.showPojectOne {
@@ -384,16 +384,18 @@ main {
     min-width: 20%; }
 
 .project-container {
-  display: flex;
-  flex-flow: column wrap;
   width: 100%;
   overflow: scroll; }
 
 .project-image {
-  display: inline-block;
+  display: absolute;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: 900px; }
+
+.img-heading {
+  color: #ffc000; }
 
 #main-footer {
   text-align: center;
@@ -410,19 +412,19 @@ main {
   margin-bottom: 1rem;
   z-index: 50; }
 
-@media screen and (min-width: 1121px) {
+@media screen and (min-width: 1021px) {
   .projects {
-    grid-template-columns: repeat(5, 1fr); }
+    grid-template-columns: repeat(6, 1fr); }
   .logos {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (max-width: 769px) and (max-width: 1120px) {
+@media screen and (max-width: 799px) and (max-width: 1020px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .logos {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
   main {
     align-items: center;
     text-align: center; }
@@ -458,7 +460,7 @@ main {
     grid-template-areas: 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   .logos {
     grid-template-columns: repeat(2, 1fr); } }
 

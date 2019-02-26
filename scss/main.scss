@@ -205,7 +205,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
   img {
     width: 100%;
@@ -232,7 +232,7 @@ main {
 }
 
 .btn-light {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 
   color: #fff;
   &:hover {
@@ -262,14 +262,26 @@ main {
   &.showProject,
   &.showProjectOne,
   &.showProjectTwo,
-  &.showProjectThree {
+  &.showProjectThree,
+  &.showProjectFour,
+  &.showProjectFive,
+  &.showProjectSix,
+  &.showProjectSeven,
+  &.showProjectEight,
+  &.showProjectNine {
     visibility: visible;
   }
 
   &.showProject,
   &.showProjectOne,
   &.showProjectTwo,
-  &.showProjectThree {
+  &.showProjectThree,
+  &.showProjectFour,
+  &.showProjectFive,
+  &.showProjectSix,
+  &.showProjectSeven,
+  &.showProjectEight,
+  &.showProjectNine {
     // Slide in from top
     transform: translate3d(0, 0, 0);
   }
@@ -331,17 +343,20 @@ main {
 }
 
 .project-container {
-  display: flex;
-  flex-flow: column wrap;
   width: 100%;
   overflow: scroll;
 }
 
 .project-image {
-  display: inline-block;
+  display: absolute;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: 900px;
+}
+
+.img-heading {
+  color: $secondary-color;
 }
 
 // Footer

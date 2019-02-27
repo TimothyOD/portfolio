@@ -396,7 +396,9 @@ main {
 
 .img-heading {
   color: #ffc000;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 #main-footer {
   text-align: center;

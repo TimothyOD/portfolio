@@ -248,6 +248,8 @@ main {
       main .icons a:hover {
         color: #ffc000;
         transition: all 0.5s ease-out; }
+  main .fab.fa-linkedin {
+    display: none; }
   main#home {
     overflow: hidden; }
     main#home h1 {

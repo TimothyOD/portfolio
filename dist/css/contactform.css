@@ -113,6 +113,17 @@ ul {
   font-size: 0.9rem;
 }
 
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected,
+textarea:-internal-autofill-previewed,
+.textarea:-internal-autofill-selected,
+select:-internal-autofill-previewed,
+select:-internal-autofill-selected {
+  background-color: #444 !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+}
+
 .contact form button {
   width: 100%;
   padding: 1em;

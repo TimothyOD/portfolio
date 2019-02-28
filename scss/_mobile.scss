@@ -94,8 +94,24 @@
   h2.pg-heading {
     left: 0rem;
   }
+  h1.lg-heading {
+    font-size: 2rem;
+  }
+
+  h2.sm-heading {
+    font-size: 1.25rem;
+  }
+
+  .text-o {
+    font-size: 70px;
+    top: 0.45rem;
+    padding: 7px;
+  }
   .projects {
     grid-template-columns: 1fr;
+  }
+  .featured {
+    grid-template-columns: repeat(1, 1fr);
   }
   .cv-info {
     grid-template-areas:
@@ -112,5 +128,9 @@
   }
   .img-heading {
     font-size: 0.9rem;
+  }
+  main {
+    padding: 2rem;
+    padding-top: 3.25rem;
   }
 }
